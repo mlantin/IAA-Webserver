@@ -14,26 +14,29 @@ var wavoptions = {
 	channels: 1
 };
 
-var writer = new wav.Writer(wavoptions);
-
 app.use(bodyParser.raw(parserOptions)); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
 
 app.get('/', function (req, res) {
-  res.send('Hello World!')
-})
+    fs.readFile('public/audio/' + req.query.fn + '.wav', function(err, data) { 
+    if (err) {
+      throw err;
+    }
+    res.send(data);
+  });
+
+});
 
 app.put('/audio', function (req, res) {
-  console.log(req.get('Content-Type'));
-  console.log(req.body);
   var filename = req.query.fn+".wav";
+  var writer = new wav.Writer(wavoptions);
   writer.pipe(fs.createWriteStream("public/audio/"+filename));
   writer.write(req.body);
   writer.end();
   res.send('saved your audio file');
-})
+});
 
 app.listen(3000, function () {
-  console.log('Example app listening on port 3000!')
-})
+  console.log('Audio Server listening on port 3000!')
+});
