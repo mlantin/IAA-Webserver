@@ -37,6 +37,18 @@ app.put('/audio', function (req, res) {
   res.send('saved your audio file');
 });
 
+app.delete('/', function (req, res) {
+  console.log('Received delete request');
+  fs.unlink('public/audio/' + req.query.fn + '.wav', function (err) {
+    if (err) {
+      throw err;
+    }
+    var message = 'File ' + req.query.fn + '.wav deleted successfully';
+    console.log(message);
+    res.send(message);
+  });
+});
+
 app.listen(3000, function () {
   console.log('Audio Server listening on port 3000!')
 });
