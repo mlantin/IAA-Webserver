@@ -19,13 +19,19 @@ app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x
 
 
 app.get('/', function (req, res) {
+    console.log('Incoming GET request for public/audio/' + req.query.fn + '.wav');
     fs.readFile('public/audio/' + req.query.fn + '.wav', function(err, data) { 
-    if (err) {
-      throw err;
-    }
-    res.send(data);
+      if (err) {
+        if (err.code === 'ENOENT') {
+          var message = 'Warning: No such file ' + err.path;
+          console.log(message);
+          res.status(404).send(message);
+        } else {
+          throw err;
+        }
+      }
+      res.send(data);
   });
-
 });
 
 app.put('/audio', function (req, res) {
