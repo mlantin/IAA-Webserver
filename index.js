@@ -11,7 +11,7 @@ var parserOptions = {
 };
 
 var wavoptions = {
-	channels: 1
+       channels: 1
 };
 
 app.use(bodyParser.raw(parserOptions)); // for parsing application/json
@@ -46,10 +46,16 @@ app.put('/audio', function (req, res) {
 app.delete('/', function (req, res) {
   console.log('Received delete request');
   fs.unlink('public/audio/' + req.query.fn + '.wav', function (err) {
+    var message;
     if (err) {
-      throw err;
+        if (err.code === 'ENOENT') {
+          message = 'File ' + req.query.fn + '.wav does not exist';
+        } else {
+          throw err;
+        }
+    } else {
+      message = 'File ' + req.query.fn + '.wav deleted successfully';
     }
-    var message = 'File ' + req.query.fn + '.wav deleted successfully';
     console.log(message);
     res.send(message);
   });
