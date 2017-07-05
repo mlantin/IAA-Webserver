@@ -14,13 +14,36 @@ var wavoptions = {
        channels: 1
 };
 
+var filesArr;
+var loadSceneFiles = function () {
+
+    files = fs.readdirSync('public/scene/');
+    filesArr = {};
+    filesArr["scenes"] = []
+    files.forEach(function(file) {
+        scene = {}
+        if (file.endsWith('.json')) {
+            filename = file.slice(0, -5);
+            content = fs.readFileSync('public/scene/' + file)
+            content = JSON.parse(content)
+            scene["filename"] = file;
+            scene["name"] = content["name"] || filename
+            filesArr.scenes = filesArr.scenes.concat(scene);
+        }
+
+    });
+
+};
+
+loadSceneFiles();
+
 app.use(bodyParser.raw(parserOptions)); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
-
+app.use(express.static('public'))
 
 app.get('/', function (req, res) {
     console.log('Incoming GET request for public/audio/' + req.query.fn + '.wav');
-    fs.readFile('public/audio/' + req.query.fn + '.wav', function(err, data) { 
+    fs.readFile('public/audio/' + req.query.fn + '.wav', function(err, data) {
       if (err) {
         if (err.code === 'ENOENT') {
           var message = 'Warning: No such file ' + err.path;
@@ -60,6 +83,12 @@ app.delete('/', function (req, res) {
     res.send(message);
   });
 });
+
+app.get('/scenes/', function (req, res) {
+    console.log('Request for scenes list.');
+    res.json(filesArr);
+});
+
 
 app.listen(3000, function () {
   console.log('Audio Server listening on port 3000!')
