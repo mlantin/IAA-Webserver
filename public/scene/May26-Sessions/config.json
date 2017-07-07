@@ -3,7 +3,7 @@
     "wordInfoList": [
         {
             "word": "engagement",
-            "clipfn": "May26-Sessions/engagement",
+            "clipfn": "engagement",
             "scale": 1.0,
             "pos": {
                 "x": 1.264654278755188,
@@ -19,7 +19,7 @@
         },
         {
             "word": "ethereal",
-            "clipfn": "May26-Sessions/ethereal",
+            "clipfn": "ethereal",
             "scale": 1.0,
             "pos": {
                 "x": 0.24711906909942628,
@@ -35,7 +35,7 @@
         },
         {
             "word": "hello",
-            "clipfn": "May26-Sessions/hello",
+            "clipfn": "hello",
             "scale": 1.0,
             "pos": {
                 "x": -1.7448939085006714,
@@ -51,7 +51,7 @@
         },
         {
             "word": "illusory",
-            "clipfn": "May26-Sessions/illusory",
+            "clipfn": "illusory",
             "scale": 1.0,
             "pos": {
                 "x": -0.6023607850074768,
@@ -67,7 +67,7 @@
         },
         {
             "word": "permanent",
-            "clipfn": "May26-Sessions/permanent",
+            "clipfn": "permanent",
             "scale": 1.0,
             "pos": {
                 "x": -0.8556865453720093,
@@ -83,7 +83,7 @@
         },
         {
             "word": "unrealized",
-            "clipfn": "May26-Sessions/unrealized",
+            "clipfn": "unrealized",
             "scale": 1.0,
             "pos": {
                 "x": 0.8781283497810364,
@@ -99,7 +99,7 @@
         },
         {
             "word": "breathing",
-            "clipfn": "May26-Sessions/breathing",
+            "clipfn": "breathing",
             "scale": 1.0,
             "pos": {
                 "x": -1.405860424041748,
@@ -115,7 +115,7 @@
         },
         {
             "word": "",
-            "clipfn": "May26-Sessions/aaah",
+            "clipfn": "aaah",
             "scale": 1.0,
             "pos": {
                 "x": -0.7756527662277222,
@@ -131,7 +131,7 @@
         },
         {
             "word": "",
-            "clipfn": "May26-Sessions/omm",
+            "clipfn": "omm",
             "scale": 1.0,
             "pos": {
                 "x": -1.2470382452011109,
@@ -147,7 +147,7 @@
         },
         {
             "word": "",
-            "clipfn": "May26-Sessions/omm2",
+            "clipfn": "omm2",
             "scale": 1.0,
             "pos": {
                 "x": -0.2069227695465088,
@@ -163,7 +163,7 @@
         },
         {
             "word": "",
-            "clipfn": "May26-Sessions/chikichika",
+            "clipfn": "chikichika",
             "scale": 1.0,
             "pos": {
                 "x": -0.22693327069282533,

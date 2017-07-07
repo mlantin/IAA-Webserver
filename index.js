@@ -3,7 +3,9 @@ var app = express()
 var bodyParser = require('body-parser');
 var fs = require('fs');
 var wav = require('wav');
+var path = require('path');
 
+var ScenePath = 'public/scene/';
 var parserOptions = {
   inflate: true,
   limit: '100mb',
@@ -17,17 +19,18 @@ var wavoptions = {
 var filesArr;
 var loadSceneFiles = function () {
 
-    files = fs.readdirSync('public/scene/');
+    files = fs.readdirSync(ScenePath).filter(file => fs.lstatSync(path.join(ScenePath, file)).isDirectory());
     filesArr = {};
-    filesArr["scenes"] = []
+    filesArr["scenes"] = [];
     files.forEach(function(file) {
-        scene = {}
-        if (file.endsWith('.json')) {
-            filename = file.slice(0, -5);
-            content = fs.readFileSync('public/scene/' + file)
+        scene = {};
+        var jsonFile = path.join(ScenePath, file, "config.json");
+        if (fs.existsSync(jsonFile)) {
+            name = file;
+            content = fs.readFileSync(jsonFile)
             content = JSON.parse(content)
-            scene["filename"] = file;
-            scene["name"] = content["name"] || filename
+            scene["name"] = file;
+            scene["title"] = content["title"] || name
             filesArr.scenes = filesArr.scenes.concat(scene);
         }
 
@@ -64,6 +67,10 @@ app.put('/audio', function (req, res) {
   writer.write(req.body);
   writer.end();
   res.send('saved your audio file');
+});
+
+app.put('/scenes/', function (req, res) {
+
 });
 
 app.delete('/', function (req, res) {
