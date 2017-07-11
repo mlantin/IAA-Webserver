@@ -4,7 +4,7 @@
     "wordInfoList": [
         {
             "word": "I see you",
-            "clipfn": "iseeyou",
+            "clipfn": "scene/ARinAction/audio/iseeyou",
             "scale": 1.0,
             "pos": {
                 "x": -0.3106745183467865,
@@ -20,7 +20,7 @@
         },
         {
             "word": "look",
-            "clipfn": "look",
+            "clipfn": "scene/ARinAction/audio/look",
             "scale": 1.0,
             "pos": {
                 "x": -0.6192079186439514,
@@ -36,7 +36,7 @@
         },
         {
             "word": "look",
-            "clipfn": "look2",
+            "clipfn": "scene/ARinAction/audio/look2",
             "scale": 1.0,
             "pos": {
                 "x": -0.3497617840766907,
@@ -52,7 +52,7 @@
         },
         {
             "word": "do you see",
-            "clipfn": "doyousee",
+            "clipfn": "scene/ARinAction/audio/doyousee",
             "scale": 1.0,
             "pos": {
                 "x": -0.025831758975982667,
@@ -68,7 +68,7 @@
         },
         {
             "word": "the future looks bright",
-            "clipfn": "thefuturelooksbright",
+            "clipfn": "scene/ARinAction/audio/thefuturelooksbright",
             "scale": 1.0,
             "pos": {
                 "x": -1.4881248474121094,
@@ -84,7 +84,7 @@
         },
         {
             "word": "chat bot",
-            "clipfn": "chatbot",
+            "clipfn": "scene/ARinAction/audio/chatbot",
             "scale": 1.0,
             "pos": {
                 "x": 0.1684824824333191,
@@ -100,7 +100,7 @@
         },
         {
             "word": "seduce ",
-            "clipfn": "1_201706050549_73780fe5c67345e6bb5cbff4574164de",
+            "clipfn": "scene/ARinAction/audio/1_201706050549_73780fe5c67345e6bb5cbff4574164de",
             "scale": 1.0,
             "pos": {
                 "x": -1.1958916187286378,
@@ -116,7 +116,7 @@
         },
         {
             "word": "stay ",
-            "clipfn": "1_201706050551_8f2945e3dc5c4ce5a5384188d025d226",
+            "clipfn": "scene/ARinAction/audio/1_201706050551_8f2945e3dc5c4ce5a5384188d025d226",
             "scale": 1.0,
             "pos": {
                 "x": -1.1764366626739503,
@@ -132,7 +132,7 @@
         },
         {
             "word": "love ",
-            "clipfn": "1_201706050553_447f84eade4d413bb0a7cffb54ebdff5",
+            "clipfn": "scene/ARinAction/audio/1_201706050553_447f84eade4d413bb0a7cffb54ebdff5",
             "scale": 1.0,
             "pos": {
                 "x": -0.7279478907585144,
@@ -148,7 +148,7 @@
         },
         {
             "word": "share ",
-            "clipfn": "1_201706050554_5a43fdd0c615489fabebebfbd82a1a49",
+            "clipfn": "scene/ARinAction/audio/1_201706050554_5a43fdd0c615489fabebebfbd82a1a49",
             "scale": 1.0,
             "pos": {
                 "x": -0.08416056632995606,
@@ -164,7 +164,7 @@
         },
         {
             "word": "move ",
-            "clipfn": "1_201706050557_974f81106bff436f9255f55f1e04347a",
+            "clipfn": "scene/ARinAction/audio/1_201706050557_974f81106bff436f9255f55f1e04347a",
             "scale": 1.0,
             "pos": {
                 "x": 0.08619368076324463,
@@ -180,7 +180,7 @@
         },
         {
             "word": "help ",
-            "clipfn": "1_201706050557_624f7994467144d9b86d2cab6ee0e4a8",
+            "clipfn": "scene/ARinAction/audio/1_201706050557_624f7994467144d9b86d2cab6ee0e4a8",
             "scale": 1.0,
             "pos": {
                 "x": -0.050361067056655887,
@@ -196,7 +196,7 @@
         },
         {
             "word": "being ",
-            "clipfn": "1_201706050558_be2a0e5d46144221a24add70d179d208",
+            "clipfn": "scene/ARinAction/audio/1_201706050558_be2a0e5d46144221a24add70d179d208",
             "scale": 1.0,
             "pos": {
                 "x": -0.5465874075889587,
@@ -212,7 +212,7 @@
         },
         {
             "word": "buy ",
-            "clipfn": "1_201706050559_21d8d03d2f7449fab721a0b9b6630038",
+            "clipfn": "scene/ARinAction/audio/1_201706050559_21d8d03d2f7449fab721a0b9b6630038",
             "scale": 1.0,
             "pos": {
                 "x": -0.8076233863830566,
@@ -228,7 +228,7 @@
         },
         {
             "word": "I know what you want ",
-            "clipfn": "1_201706050604_173b8278e8a74910b824872caf3cbbeb",
+            "clipfn": "scene/ARinAction/audio/1_201706050604_173b8278e8a74910b824872caf3cbbeb",
             "scale": 1.0,
             "pos": {
                 "x": -0.6793350577354431,
@@ -244,7 +244,7 @@
         },
         {
             "word": "",
-            "clipfn": "icouldseeherfriends",
+            "clipfn": "scene/ARinAction/audio/icouldseeherfriends",
             "scale": 1.0,
             "pos": {
                 "x": -0.9068893194198608,
@@ -260,7 +260,7 @@
         },
         {
             "word": "",
-            "clipfn": "uhwhat",
+            "clipfn": "scene/ARinAction/audio/uhwhat",
             "scale": 1.0,
             "pos": {
                 "x": -0.2730353772640228,
@@ -276,7 +276,7 @@
         },
         {
             "word": "",
-            "clipfn": "11_201706050602_a3539057027f4cfb985dfafe6a1303ec",
+            "clipfn": "scene/ARinAction/audio/11_201706050602_a3539057027f4cfb985dfafe6a1303ec",
             "scale": 1.0,
             "pos": {
                 "x": -0.8633967041969299,
@@ -292,7 +292,7 @@
         },
         {
             "word": "",
-            "clipfn": "11_201706050603_7e988e93e23346f286af9f73c8d1311a",
+            "clipfn": "scene/ARinAction/audio/11_201706050603_7e988e93e23346f286af9f73c8d1311a",
             "scale": 1.0,
             "pos": {
                 "x": -1.1697628498077393,
@@ -308,7 +308,7 @@
         },
         {
             "word": "",
-            "clipfn": "11_201706050603_e5268d5351b54803acddb48dd9b83399",
+            "clipfn": "scene/ARinAction/audio/11_201706050603_e5268d5351b54803acddb48dd9b83399",
             "scale": 1.0,
             "pos": {
                 "x": -1.0130563974380494,

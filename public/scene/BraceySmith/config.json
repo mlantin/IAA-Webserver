@@ -3,7 +3,7 @@
     "wordInfoList": [
         {
             "word": "what's going on",
-            "clipfn": "tedx-whatsgoingon",
+            "clipfn": "scene/BraceySmith/audio/tedx-whatsgoingon",
             "scale": 1.0,
             "pos": {
                 "x": 0.9138467311859131,
@@ -19,7 +19,7 @@
         },
         {
             "word": "who knows",
-            "clipfn": "tedx-whoknows",
+            "clipfn": "scene/BraceySmith/audio/tedx-whoknows",
             "scale": 1.0,
             "pos": {
                 "x": -0.2003989964723587,
@@ -35,7 +35,7 @@
         },
         {
             "word": "I like it",
-            "clipfn": "tedx-ilikeit",
+            "clipfn": "scene/BraceySmith/audio/tedx-ilikeit",
             "scale": 1.0,
             "pos": {
                 "x": -0.10232986509799957,
@@ -51,7 +51,7 @@
         },
         {
             "word": "never again",
-            "clipfn": "tedx-neveragain",
+            "clipfn": "scene/BraceySmith/audio/tedx-neveragain",
             "scale": 1.0,
             "pos": {
                 "x": -0.5534424185752869,
@@ -67,7 +67,7 @@
         },
         {
             "word": "so curious ",
-            "clipfn": "1_201706081442_4c7b3d1aea0340c78a24cf8a7c671421",
+            "clipfn": "scene/BraceySmith/audio/1_201706081442_4c7b3d1aea0340c78a24cf8a7c671421",
             "scale": 1.0,
             "pos": {
                 "x": -0.5626412034034729,
@@ -83,7 +83,7 @@
         },
         {
             "word": "good god man ",
-            "clipfn": "1_201706081448_14528d761cc94b3ca541dc4a586b27ef",
+            "clipfn": "scene/BraceySmith/audio/1_201706081448_14528d761cc94b3ca541dc4a586b27ef",
             "scale": 1.0,
             "pos": {
                 "x": 1.2091710567474366,
@@ -99,7 +99,7 @@
         },
         {
             "word": "hall awareness ",
-            "clipfn": "1_201706081452_2bd20e56862b421bb77f984ea59318e2",
+            "clipfn": "scene/BraceySmith/audio/1_201706081452_2bd20e56862b421bb77f984ea59318e2",
             "scale": 1.0,
             "pos": {
                 "x": 0.16077782213687898,
@@ -115,7 +115,7 @@
         },
         {
             "word": "",
-            "clipfn": "tedx-sound2",
+            "clipfn": "scene/BraceySmith/audio/tedx-sound2",
             "scale": 1.0,
             "pos": {
                 "x": 0.2734505832195282,
@@ -131,7 +131,7 @@
         },
         {
             "word": "",
-            "clipfn": "tedx-sound3",
+            "clipfn": "scene/BraceySmith/audio/tedx-sound3",
             "scale": 1.0,
             "pos": {
                 "x": 0.21050070226192475,
@@ -147,7 +147,7 @@
         },
         {
             "word": "",
-            "clipfn": "tedx-sound5",
+            "clipfn": "scene/BraceySmith/audio/tedx-sound5",
             "scale": 1.0,
             "pos": {
                 "x": -0.16709521412849427,
@@ -163,7 +163,7 @@
         },
         {
             "word": "",
-            "clipfn": "21_201706081444_58f8f20af79040138238a7ca992eeee6",
+            "clipfn": "scene/BraceySmith/audio/21_201706081444_58f8f20af79040138238a7ca992eeee6",
             "scale": 1.0,
             "pos": {
                 "x": 0.6527228355407715,
@@ -179,7 +179,7 @@
         },
         {
             "word": "",
-            "clipfn": "21_201706081446_52d80a95b7804b77ab2133cceff56c90",
+            "clipfn": "scene/BraceySmith/audio/21_201706081446_52d80a95b7804b77ab2133cceff56c90",
             "scale": 1.0,
             "pos": {
                 "x": -0.12936699390411378,
@@ -195,7 +195,7 @@
         },
         {
             "word": "",
-            "clipfn": "24_201706081447_c24fcecc972945279dc5dcef29f8f8b1",
+            "clipfn": "scene/BraceySmith/audio/24_201706081447_c24fcecc972945279dc5dcef29f8f8b1",
             "scale": 1.0,
             "pos": {
                 "x": -0.43995019793510439,
@@ -211,7 +211,7 @@
         },
         {
             "word": "",
-            "clipfn": "24_201706081448_a460472085804c09899b4d0882bcd5d1",
+            "clipfn": "scene/BraceySmith/audio/24_201706081448_a460472085804c09899b4d0882bcd5d1",
             "scale": 1.0,
             "pos": {
                 "x": -0.5613894462585449,
