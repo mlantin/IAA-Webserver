@@ -98,7 +98,9 @@ GenScene = function(filePath, fileContent) {
                 var oriPath = path.join('public', audioFile + '.wav');
                 var desPath = path.join(dir, 'audio', path.basename(audioFile) + '.wav');
                 item.clipfn = path.join('scene', sceneName, 'audio', path.basename(audioFile));
-                fs.createReadStream(oriPath).pipe(fs.createWriteStream(desPath));
+                if (fs.existsSync(oriPath)) {
+                    fs.createReadStream(oriPath).pipe(fs.createWriteStream(desPath));
+                }
             }
         )
         fs.writeFileSync(path.join(dir, 'config.json'), JSON.stringify(scene, null, 4));
@@ -120,6 +122,7 @@ app.put('/scene', function (req, res) {
         }
         console.log('The file has been saved!');
         try {
+            console.log(filename);
             GenScene(filename, req.body);
             res.send('Scene file' + req.query.fn + 'saved.');
         } catch(e) {
